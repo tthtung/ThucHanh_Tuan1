@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 align="center">Registration Form</h1>
+        <p align="center">Register your Jackson Electronics product here</p>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="address1">Address1:</label>
+            <input type="text" id="address1" name="address1"><br>
+            <label for="address2">Address2:</label>
+            <input type="text" id="address2" name="address2"><br>
+            <label for="ct">City:</label>
+            <input type="text" id="ct" name="ct">
+            <label for="st">State:</label>
+            <input type="text" id="st" name="st">
+            <label for="z">Zip:</label>
+            <input type="text" id="z" name="z"><br>
+            <label for="co">Country:</label>
+            <input type="text" id="co" name="co" value="United States">
+            <hr>
+            <label for="pro">Product:</label>
+            <!-- Danh sách các lựa chọn -->
+            <select id="pro" name="pro">
+                <option value="1">ScanMaster</option>
+            <label for="DateP">Date Purchased:</label>
+            <input type="text" id="DateP" name="DateP"><br>
+            <label for="Seri">Serial #.</label>
+            <input type="text" id="Seri" name="Seri"><br>
+            <!-- Tạo radio với các giá trị -->
+            <label for="Use">Used for.</label>
+            <input type="radio" name="Use" id="home">Home
+            <input type="radio" name="Use" id="ed">Eductional Institution<br>
+            <input type="radio" name="Use" id="bussiness">Bussiness
+            <input type="radio" name="Use" id="other">Other<br>
+            <input type="radio" name="Use" id="Goverment">Goverment<br>
+            <hr>
+            <label for="Sys">System (check all that apply):</label>
+            <input type="checkbox" name="Sys" id="Windown">Windown
+            <input type="checkbox" name="Sys" id="Mac">UNIX<br>
+            <input type="checkbox" name="Sys" id="Linux">Macintosh
+            <input type="checkbox" name="Sys" id="other">Other<br>
+            <hr>
+            <label for="comment">Comments?: </label>
+            <textarea name="comment" id="comments" cols="30" rows="10"></textarea> <br>
+            <button>Click to register</button>
+            <button>Click to cancel</button>
+        </form>
+
+    </div>
+</body>
+</html>
