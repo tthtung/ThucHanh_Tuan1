@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px auto;
+            padding: 0px;
+        }
+        .wrapper {
+            height: 900px;
+            width: 900px;
+            background-color: beige;
+        }
+        header{
+            height: 300px;
+            width: 900px;
+            background-color: azure;
+        }
+        .menu li{
+            height: 50px;
+            width: 150px;
+            background-color: aqua;
+            /* Canh trái cho menu */
+            float: left; 
+            /* Canh chữ cho menu */
+            line-height: 50px;
+            list-style-type: none;
+            /* Canh lề cho ô chữ */
+            text-indent: 15px;
+            border: 1px solid;
+            position: relative;
+        }
+        /* Sửa màu khi di chuột vào */
+        .menu li:hover{
+            background-color: blue;
+        }
+        /* Sửa màu của có mục menu */
+        li a{
+            /* Bỏ dấu gạch chân */
+            text-decoration: none;
+            color: red;
+        }
+        /* Đổi màu chữ khi di chuột vào làm cho chữ nổi lên*/
+        li a:hover{
+            color: white;
+            font-weight: bold;
+        }
+        /* Tắt tự động hiển thị */
+        .menu li .submenu{
+            display: none;
+            position: absolute;
+        }
+        /* Hiển thị khi tiến tới submenu */
+        li:hover > .submenu{
+            display: block;
+        }
+        .menu li .submenu .submenu{
+            display: none;
+        }
+        .menu li .submenu li:hover .submenu{
+            display: block;
+            top: 0px;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./logo-iuh-1-768x335.png" alt="Thanh Tung" width="900" height="300">
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="https://sv.iuh.edu.vn/sinh-vien-dang-nhap.html">ITEM1</a></li>
+                <li><a href="#">ITEM2</a></li>
+                <li><a href="#">ITEM3</a></li>
+                <li><a href="#">ITEM4</a>
+                    <ul class="submenu">
+                        <li><a href="">sub-menu1</a></li>
+                        <li><a href="">sub-menu2</a>
+                            <ul class="submenu">
+                                <li><a href="">sub-menu2.1</a></li>
+                                <li><a href="">sub-menu2.2</a></li>
+                                <li><a href="">sub-menu2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">sub-menu3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ITEM5</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

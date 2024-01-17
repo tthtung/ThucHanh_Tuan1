@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px auto;
+            padding: 0px;
+        }
+        .content{
+            width: 900px;
+            height: 550px;
+            background-color: white;
+            border: 1px solid;
+        }
+        .content .left{
+            width: 20%;
+            height: 200px;
+            float: left;
+        }
+        .content .right{
+            width: 80%;
+            height: 200px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Contact Us</h1>
+        <fieldset>
+            <legend>Your message</legend>
+            <div class="left">
+                <label for="to">To</label><br>
+                <label for="email">Your email</label><br>
+                <label for="message">Message</label><br>
+                <label for="attach">Attach File</label>
+            </div>
+            <div class="right">
+                <input type="tel" name="to" id="toid" value="Example Cafe"><br>
+                <input type="text" name="email" id="emailid"><br>
+                <textarea name="message" id="messageid" cols="30" rows="5"></textarea><br>
+                <input type="button" value="Chossen File">
+                <label for="attach">No file chosen</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us:</legend>
+            <div class="left">
+                <label for="HowDY">How did you hear of us</label>
+                <label for="News">Newsletter</label>
+            </div>
+            <div class="right">
+                <select name="HowDY" id="HowDY">
+                    <option value="1">Google</option>
+                    <option value="2">Friend</option>
+                    <option value="3">Advertisement</option>
+                    <option value="4">Other</option>
+                </select><br>
+                <input type="checkbox" name="News" id="Letter">Ensure this box is checked if you would like to receive email updates
+            </div>
+        </fieldset>
+        <input type="button" value="Send message">
+    </div>
+</body>
+</html>
