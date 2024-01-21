@@ -11,7 +11,7 @@
         }
         .content{
             width: 900px;
-            height: 550px;
+            height: 400px;
             background-color: white;
             border: 1px solid;
         }
@@ -23,7 +23,7 @@
         .content .right{
             width: 80%;
             height: 200px;
-            float: right;
+            float: left;
         }
     </style>
 </head>
@@ -39,9 +39,9 @@
                 <label for="attach">Attach File</label>
             </div>
             <div class="right">
-                <input type="tel" name="to" id="toid" value="Example Cafe"><br>
-                <input type="text" name="email" id="emailid"><br>
-                <textarea name="message" id="messageid" cols="30" rows="5"></textarea><br>
+                <input type="tel" name="to" value="Example Cafe"><br>
+                <input type="text" name="email"><br>
+                <textarea name="message" cols="30" rows="5"></textarea><br>
                 <input type="button" value="Chossen File">
                 <label for="attach">No file chosen</label>
             </div>
@@ -53,16 +53,17 @@
                 <label for="News">Newsletter</label>
             </div>
             <div class="right">
-                <select name="HowDY" id="HowDY">
+                <select name="HowDY">
                     <option value="1">Google</option>
                     <option value="2">Friend</option>
                     <option value="3">Advertisement</option>
                     <option value="4">Other</option>
                 </select><br>
-                <input type="checkbox" name="News" id="Letter">Ensure this box is checked if you would like to receive email updates
+                <input type="checkbox" name="News">Ensure this box is checked if you would like to receive email updates
             </div>
+            <input type="button" value="Send message">
         </fieldset>
-        <input type="button" value="Send message">
+        
     </div>
 </body>
 </html>
